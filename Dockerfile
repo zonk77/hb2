@@ -19,7 +19,8 @@ chmod +x /etc/my_init.d/copy-script.sh && \
 # repositories
 echo 'deb http://archive.ubuntu.com/ubuntu trusty main universe restricted' > /etc/apt/sources.list && \
 echo 'deb http://archive.ubuntu.com/ubuntu trusty-updates main universe restricted' >> /etc/apt/sources.list && \
-add-apt-repository ppa:stebbins/handbrake-releases && \
+#add-apt-repository ppa:stebbins/handbrake-releases && \
+sudo add-apt-repository ppa:stebbins/handbrake-git-snapshots && \
 
 # update apt and install dependencies
 mv /excludes /etc/dpkg/dpkg.cfg.d/excludes && \

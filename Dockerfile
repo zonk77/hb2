@@ -15,6 +15,12 @@ mv /inotify.sh /etc/service/inotify/run && \
 chmod +x /etc/service/inotify/run && \
 mv /copy-script.sh /etc/my_init.d/copy-script.sh && \
 chmod +x /etc/my_init.d/copy-script.sh && \
+mv /libx264.so.146 /usr/lib/x86_64-linux-gnu/libx264.so.146 && \
+mv /libx264_main10.so /usr/lib/x86_64-linux-gnu/libx264_main10.so && \
+mv /libx265_main.so /usr/lib/x86_64-linux-gnu/libx265_main.so && \
+mv /libx265_main10.so /usr/lib/x86_64-linux-gnu/libx265_main10.so && \
+mv /libx265_main12.so /usr/lib/x86_64-linux-gnu/libx265_main12.so && \
+
 
 # repositories
 echo 'deb http://archive.ubuntu.com/ubuntu trusty main universe restricted' > /etc/apt/sources.list && \
